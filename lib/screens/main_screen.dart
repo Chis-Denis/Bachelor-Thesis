@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 import '../models/meal.dart';
 import '../repositories/meal_repository.dart';
 import 'create_meal_screen.dart';
