@@ -35,7 +35,6 @@ out/
 .pub-cache/
 .pub/
 /build/
-/coverage/
 
 # Symbolication related
 app.*.symbols
@@ -105,13 +104,7 @@ app.*.map.json
 .env
 .env.local
 .env.*.local
-
-# Coverage
-coverage/
-*.lcov
-
-# Test related
-.test_coverage/
+!.env.example
 
 # Temporary files
 *.tmp
