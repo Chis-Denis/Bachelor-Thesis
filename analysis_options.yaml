@@ -1,0 +1,16 @@
+include: package:flutter_lints/flutter.yaml
+
+# Layer dependency rule (enforced by convention):
+#   presentation -> application -> domain <- infrastructure
+#   bootstrap is the only layer allowed to import every other layer.
+# domain must never import Flutter; presentation must never import
+# domain or infrastructure directly.
+
+analyzer:
+  language:
+    strict-casts: true
+
+linter:
+  rules:
+    prefer_final_locals: true
+    unnecessary_parenthesis: true
